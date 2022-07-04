@@ -1,0 +1,163 @@
+dark-primary-color    { background: #616161; }
+default-primary-color { background: #9E9E9E; }
+light-primary-color   { background: #F5F5F5; }
+text-primary-color    { color: #212121; }
+accent-color          { background: #607d8b; }
+primary-text-color    { color: #212121; }
+secondary-text-color  { color: #757575; }
+divider-color         { border-color: #BDBDBD; }
+
+@font-face {
+  font-family: MonstreatREGULAR;
+  src: url(./Fonts/MontserratRegular.ttf);
+}
+
+@font-face {
+  font-family: MonstreatMEDIUM;
+  src: url(./Fonts/MontserratMedium.ttf);
+}
+
+@font-face {
+  font-family: MonstreatLIGHT;
+  src: url(./Fonts/Montserrat-Light.ttf);
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background: radial-gradient(rgba(209, 65, 65, 0), rgb(97, 97, 97));
+}
+
+
+.sideMenu{
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  left: 0vw;
+  background: linear-gradient(90deg, #bdbdbd, rgba(209, 65, 65, 0));
+}
+
+.myList ul li span{
+  position: relative;
+  font-size: 3vh;
+  text-align: right;
+  left: 0.5vw;
+  font-family: MonstreatMEDIUM;
+}
+
+.PriceCAR{
+  top: 5.5vh;
+  left: 9vw;
+  height: 3vw;
+  text-align: right;
+  width: 12vw;
+  font-size: 1.8vw;
+  font-family: MonstreatLIGHT;
+}
+
+.myList ul li{
+  background: linear-gradient(#bdbdbd, rgba(96, 125, 139, 0)), linear-gradient(#bdbdbd, rgba(96, 125, 139, 0));
+ /* background-color: #9E9E9E; */
+  color: #212121;
+  width: 22vw;
+  height: 10vh;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.myList{
+  position: absolute;
+  top: 5vh;
+  width: 25vw;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.buttonDIV{
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+}
+
+.ButtonBuy{
+  width: 10vw;
+  height: 3vw;
+  font-family: MonstreatMEDIUM;
+  font-size: 1vw;
+  color: #212121;
+  background: radial-gradient(#f5f5f546, rgba(12, 12, 12, 0));
+  border: 0px;
+  border-radius: 1vw;
+}
+
+.ButtonBuy:hover{
+  color: #616161;
+  background-color: #f5f5f546;
+  transition: 0.3s;
+  border-radius: 2vw;
+}
+
+.ButtonTest{
+  width: 10vw;
+  height: 3vw;
+  font-family: MonstreatMEDIUM;
+  font-size: 1vw;
+  color: #212121;
+  background: radial-gradient(#f5f5f546, rgba(12, 12, 12, 0));
+  background-color: #f5f5f500;
+  border: 0px;
+  border-radius: 1vw;
+  transition: 0.3s;
+}
+
+.ButtonTest:hover{
+  color: #616161;
+  background-color: #f5f5f546;
+  transition: 0.3s;
+  border-radius: 2vw;
+}
+
+.ButtonClose{
+  width: 10vw;
+  height: 3vw;
+  font-family: MonstreatMEDIUM;
+  font-size: 1vw;
+  color: #212121;
+  background: radial-gradient(#f5f5f546, rgba(12, 12, 12, 0));
+  background-color: #f5f5f500;
+  border: 0px;
+  border-radius: 1vw;
+  transition: 0.3s;
+}
+
+.ButtonClose:hover{
+  color: #616161;
+  background-color: #f5f5f546;
+  transition: 0.3s;
+  border-radius: 2vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #BDBDBD;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <div class="sideMenu">
+    <div class="myList">
+        <ul id="myList">
+          
+          <li><span>MB s500 MAYBACH TEST<div class="PriceCAR">S3S0S00000$</div></span></li>
+          
+        </ul>
+    </div>
+    <div  class="buttonDIV">
+    <button class="ButtonBuy" onClick="buyCAR()">Buy now</button>
+    <button class="ButtonTest" onClick="testCAR()">Test drive</button>
+    <button class="ButtonClose" onClick="closeCAR()">Close</button>
+    </div>
+  </div>
+
+
+</body>
+<script>
+function cardealerLIST(cars, price) {
+  let data = [cars];
+  //+ " Price: " + price
+  let tdata = [price + " $"];
+
+  let list = document.getElementById("myList");
+
+  data.forEach((item) => {
+    let li = document.createElement("li");
+    let spanF = document.createElement("span");
+    let spanS = document.createElement("div");
+    spanS.className = "PriceCAR";
+//    li.innerText = item;
+    list.appendChild(li);
+    spanF.innerText = data;
+    li.appendChild(spanF);
+    spanS.innerText = tdata;
+    li.appendChild(spanS);
+    li.addEventListener("click", function () {
+      mp.trigger("spawnCarDEALER", item);
+    });
+  });
+}
+</script>
+</html>
+
+
+<!--
+<div class="sideMenu">
+  <div class="myList">
+      <ul id="myList"><li><span>MB s500 MAYBACH <span>3000000$</span></span></li>
+                      <li><span>MB e63 Brabus  <span>250000$</span></span></li>
+      </ul>
+  </div>
+</div>
+-->
